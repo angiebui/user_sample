@@ -19,26 +19,32 @@ class UsersController < ApplicationController
 * Within that controller's view folder - then looks for the action's name 
 
 2. How do I pass variables to my views? To my partials? Is there more than one way?
-* You can pass it with locals. Check out "_signup" partial
+
+You can pass it with locals. Check out "_signup" partial
 
 3. How does Rails differentiate between views and partials?
-* Render in a view, assumes its a partial where as Render in controller, knows to render the entire view.
+
+Render in a view, assumes its a partial where as Render in controller, knows to render the entire view.
 
 
 4. What are some common ways I can use the render method?
-* http://guides.rubyonrails.org/layouts_and_rendering.html#using-render
 
-* Examples:
-** render :json (how can you can return a json object, like to_json)
-** render :file => filename, :content_type => 'application/rss'
-** render :js => "console.log('Hello Skippers!');"
+http://guides.rubyonrails.org/layouts_and_rendering.html#using-render
+
+Examples:
+* render :json (how can you can return a json object, like to_json)
+* render :file => filename, :content_type => 'application/rss'
+* render :js => "console.log('Hello Skippers!');"
 
 
 5. How does Rails handle layouts? Where do they live?
-* They live in the app/views/layouts - they are the public layouts that everyone can use. You can specify a different layout in your controller or anywhere else (i.e. renders) and create different folders in your "views".
+
+They live in the app/views/layouts - they are the public layouts that everyone can use. You can specify a different layout in your controller or anywhere else (i.e. renders) and create different folders in your "views".
 
 6. What should I do if I want a view or partial available to multiple controllers, e.g., a common UI component? Where should that partial live in my application?
-* If you want a layout/partial available to the public, you'd add it to the app/views/layouts folder. This is your "public views folder"
+
+If you want a layout/partial available to the public, you'd add it to the app/views/layouts folder. This is your "public views folder"
 
 7. How do image_tag and other asset helpers work? Where should you put your assets if you want Rails to link to them correctly?
-* You generally put your assets in the public folder, though you can add it anywhere (technically but would have to route it to that specific location. 
+
+You generally put your assets in the public folder, though you can add it anywhere (technically but would have to route it to that specific location. 
