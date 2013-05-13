@@ -1,0 +1,10 @@
+<h2> Signup </h2>
+<%= form_for @user do |f| %>
+	<p><%= f.text_field :username, placeholder: 'Username'%></p>
+  <p><%= text_field_tag :email, nil, name: 'user[email]', placeholder: "Email" %></p>
+<!--  use text_field_tag to create your custom text_field. note: tag does not bind  -->
+  <p><%= f.password_field :password, placeholder: 'Password' %></p>
+  <p><%= f.submit value: "Signup", class: 'big-btn'%></p>
+<% end %>
+
+<!-- note: you can add classes to style it for later  -->
