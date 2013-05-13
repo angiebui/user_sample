@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-
-	def new
+	def new #convention to make it index (better)
     @user = User.new
     @users = User.all
 	end
@@ -23,5 +22,4 @@ class UsersController < ApplicationController
   def edit
     @user = User.find(params[:id])
   end
-
 end

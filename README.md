@@ -47,4 +47,4 @@ If you want a layout/partial available to the public, you'd add it to the app/vi
 
 **How do image_tag and other asset helpers work? Where should you put your assets if you want Rails to link to them correctly?**
 
-You generally put your assets in the public folder, though you can add it anywhere (technically but would have to route it to that specific location. 
+You generally put your assets in the assets folder, though you can add it anywhere (technically but would have to route it to that specific location. 

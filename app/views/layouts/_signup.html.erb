@@ -1,6 +1,6 @@
 <%= form_for user do |f| %>
   <p><%= f.text_field :username, placeholder: 'Username'%></p>
-  <p><%= text_field_tag :email, nil, name: 'user[email]', placeholder: "Email" %></p>
+  <p><%= text_field_tag :email, user.email, name: 'user[email]', placeholder: "Email" %></p>
 <!--  use text_field_tag to create your custom text_field. note: tag does not bind  -->
 
   <p><%= f.password_field :password, placeholder: 'Password' %></p>
